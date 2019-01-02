@@ -1,0 +1,26 @@
+{
+  "name": "UCB Prebooker",
+  "description": "Automate booking at UC Berkeley",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "permissions": [
+    "https://auth.berkeley.edu/*",
+    "https://berkeley.libcal.com/booking/*",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts":[
+    {
+      "run_at":"document_idle",
+      "matches": ["https://berkeley.libcal.com/*"],
+      "js": ["prebook.js"],
+      "css": ["calendar.css"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "UCB Prebooker"
+  }
+}

@@ -1,0 +1,84 @@
+#calendarContainer{
+	width: 100%;
+	border: 1px solid #E7E7E7;
+}
+
+#calendarNavigation{
+	text-align: center;
+	padding: 5px;
+	font-size: 16px;
+	background-color: #EBEBEB;
+	border-bottom: 1px solid #E7E7E7;
+	font-weight: bold;
+	width:100%;
+}
+
+.navigationButton{
+	border: none;
+	outline: none;
+	background-color: #EBEBEB;
+}
+
+#previousMonth{
+	float:left;
+}
+
+#nextMonth{
+	float:right;
+}
+
+#calendarTitle{
+	display:inline;
+}
+
+#dateContainer{
+	width:100%;
+	padding: 5px 5px 5px 5px;
+
+}
+
+#calendar{
+	border-collapse: collapse;
+	text-align: center;
+	width:100%;
+}
+
+#calendar th{
+	text-align: center;
+}
+
+#calendar td{
+	padding: 4px;
+}
+
+.unclickable{
+	color:gray;
+}
+
+.unclickable:hover{
+	cursor:default;
+}
+
+.clickable{
+	text-decoration: none;
+	color:black;
+}
+
+.clickable:hover{
+	text-decoration: none;
+	color:black;
+	cursor:pointer;
+	background-color: #EBEBEB;
+}
+
+#prebookDate{
+	background-color: #D9F6FF;
+}
+
+#prebookDate:hover{
+	background-color: #B3EDFF;
+}
+
+.prebookButton{
+	margin-top: 10px;
+}

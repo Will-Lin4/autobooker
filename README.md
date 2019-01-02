@@ -1,0 +1,1 @@
+This chrome extension is intended to automate booking UCB library rooms.
